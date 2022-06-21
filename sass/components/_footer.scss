@@ -1,0 +1,42 @@
+.footer {
+    background-color: $biege-bg-color;
+    padding: 44px 0;
+    & > .container {
+        @include centeredFlex(space-between, center);
+        flex-wrap: wrap-reverse;
+        gap: 20px 20px;
+    }
+    @include breakpoint(tablet) {
+        padding: 56px 0;
+    }
+}
+
+.footer__copyright {
+    margin: 0;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    width: 126px;
+    white-space: nowrap;
+    letter-spacing: 0.2em;
+    color: $lighter-text-color;
+}
+
+.footer__links {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-left: auto;
+    &::before {
+        content: "";
+        width: 60px;
+        height: 1px;
+
+        background-color: $title-color;
+    }
+}
+
+.footer__link {
+    @extend %transitionGrayLink;
+    margin-left: 40px;
+}

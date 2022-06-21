@@ -1,0 +1,34 @@
+
+/* Fonts - шрифти */
+@import './base/fonts';
+
+/* Utils */
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/common';
+
+/* Base */
+@import './base/normalize';
+@import './base/reset';
+
+/* Components */
+@import './components/hero';
+@import './components/header';
+@import './components/best-barber';
+@import './components/service';
+@import './components/master';
+@import './components/our-chioce';
+@import './components/our-masters';
+@import './components/gallery';
+@import './components/contact-us';
+@import './components/footer';
+
+
+body {
+  font-family: $font-open-sans;
+  letter-spacing: 0.02em;
+  font-size: $regular-font-size;
+  margin: 0;
+}
+
+

@@ -1,0 +1,30 @@
+.our-masters {
+    @extend %c-section;
+    background-color: $biege-bg-color;
+
+    &__title {
+        color: $title-color;
+        font-family: $font-open-sans;
+        margin-top: 0;
+    }
+    &__meta {
+        margin-bottom: 44px;
+        @include breakpoint(tablet) {
+            max-width: 410px;
+            margin: 0 auto 44px;
+        }
+        @include breakpoint(laptop) {
+            max-width: 100%;
+            margin: 0 0 44px;
+        }
+    }
+}
+
+.masters {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    @include breakpoint(laptop) {
+        display: flex;
+    }
+}
